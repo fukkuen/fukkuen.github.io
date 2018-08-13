@@ -1,5 +1,8 @@
 <template lang="pug">
   .site
+    router-link(to="/writings") writings
+    router-link(to="/works") works
+    router-link(to="/sounds") sounds
     .site-header fukkuen
     nuxt
 </template>
