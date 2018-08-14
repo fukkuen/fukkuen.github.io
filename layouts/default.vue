@@ -1,9 +1,10 @@
 <template lang="pug">
   .site
-    router-link(to="/writings") writings
-    router-link(to="/works") works
-    router-link(to="/sounds") sounds
     .site-header fukkuen
+    nav.site-nav
+      router-link(to="/writings") writings
+      router-link(to="/works") works
+      router-link(to="/sounds") sounds
     nuxt
 </template>
 
@@ -35,7 +36,14 @@ p
 
   &-header
     text-align center
-    margin 40px 0
+    margin 20px 0
     font-size 20px
+
+  &-nav
+    text-align center
+    margin 20px 0
+    > a
+      padding 0 20px
+
 </style>
 
