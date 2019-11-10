@@ -1,14 +1,11 @@
 <template lang="pug">
   .site
-    h1 index
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  fetch ({ redirect }) {
+    return redirect("/works");
   }
 }
 </script>

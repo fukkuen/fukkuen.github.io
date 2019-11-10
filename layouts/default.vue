@@ -1,7 +1,8 @@
 <template lang="pug">
   div
     header
-      h1 fukkuen.com
+      h1
+        nuxt-link(to="/") fukkuen.com
       nav
         nuxt-link(to="/works") works
         nuxt-link(to="/bio") bio
