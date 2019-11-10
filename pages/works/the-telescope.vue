@@ -1,5 +1,5 @@
 <template>
-  <div>hi</div>
+  <div>The telescope</div>
 </template>
 
 <script>
