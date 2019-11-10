@@ -1,0 +1,38 @@
+/* recommended css code for vue-svgicon */
+.dl-icon
+	display inline-block
+	width 16px
+	height 16px
+	color inherit
+	vertical-align middle
+	fill none
+	stroke currentColor
+	&.sm
+		width 12px
+		height @width
+	&.lg
+		width 24px
+		height @width
+	&.xl
+		width 36px
+		height @width
+	&.flip-x
+		transform scaleX(-1)
+
+.dl-fill
+	fill currentColor
+	stroke none
+
+.dl-up
+	/* default */
+	transform rotate(0deg)
+
+.dl-right
+	transform rotate(90deg)
+
+.dl-down
+	transform rotate(180deg)
+
+.dl-left
+	transform rotate(-90deg)
+

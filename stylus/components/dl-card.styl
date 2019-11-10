@@ -1,0 +1,30 @@
+.dl-card
+	display block
+	border-radius 16px
+	background $bg-light
+	padding 24px
+	+screen($xs)
+		padding 24px 16px
+	&.supp
+		background $bg-supp
+	&.compact
+		padding 16px
+	&.comfort-y
+		padding-top 32px
+		padding-bottom 32px
+	&.link
+		cursor pointer
+		&:hover
+			color $red
+			background white
+	&.sharp
+		border-radius 8px
+
+.dl-card-group
+	.dl-card
+		margin-bottom 4px
+		border-radius 0
+		&:first-child
+			border-radius 24px 24px 0 0
+		&:last-child
+			border-radius 0 0 24px 24px

@@ -1,0 +1,8 @@
+.dl-dot
+	background $grey-500
+	width 8px
+	height @width
+	border-radius 500em
+	for color_name, color_value in $colors
+		&.{color_name}
+			background-color color_value

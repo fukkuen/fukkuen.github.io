@@ -1,0 +1,9 @@
+@import '../colour.styl'
+
+for color_name, color_value in $colors
+	&.fc-{color_name}
+		color color_value !important
+
+for color_name, color_value in $textColors
+	&.t-{color_name}
+		color color_value !important

@@ -1,0 +1,31 @@
+.dl-dialog
+	&__backdrop
+		position fixed
+		background alpha(black, 0.35)
+		top 0
+		bottom 0
+		left 0
+		right 0
+		z-index 4
+	&__content
+		border-radius 32px 32px 0 0
+		padding 24px 32px
+		background $bg-light
+		position fixed
+		top 30%
+		bottom 0
+		left 0
+		right 0
+		z-index 5
+		.dl-divider
+			margin-left -32px
+			margin-right -32px
+			width calc(100% + 64px)
+
+.dialog-transition
+	&-enter-active, &-leave-active
+		transition: all .25s
+
+	&-enter, &-leave-to
+		// opacity: 0
+		transform: translateY(100%)

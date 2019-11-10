@@ -1,5 +1,5 @@
-<template>
-  <div>hi</div>
+<template lang="pug">
+  div bio
 </template>
 
 <script>

@@ -1,0 +1,70 @@
+// @import './colour.styl'
+
+.dl-button
+	align-items center
+	border-radius 6px
+	display inline-flex
+	height 40px
+	flex 0 1 auto
+	font-size 1em
+	justify-content center
+	margin 0
+	outline 0
+	text-decoration none
+	transition 0.3s
+	user-select none
+	cursor pointer
+	padding 0 16px
+	font-weight bold
+	&.icon
+		border-radius 500em
+		width 40px
+		padding 0
+		min-width 0 !important
+		&.large
+			height 56px
+			width @height
+		&.sm
+			height 32px
+			width @height
+		&.mini
+			height 12px
+			width @height
+			.dl-icon
+				height 6px
+				width 6px
+
+	for color_name, color_value in $colors
+		&.{color_name}
+			background-color color_value
+			color white
+			&:hover
+				background-color darken(color_value, 10%)
+			&.outline
+				background $bg-supp
+				color color_value
+				border 1px solid color_value
+				&.active
+					background color_value
+					color white
+
+	&.ghost
+		color $text-lighter-grey
+		&:hover, &.router-link-active
+			background white
+			color $brand-red
+
+	&.round
+		border-radius 500em
+
+	&.text
+		padding 0
+
+	&.large
+		height 56px
+		min-width 160px
+		font-size 16px
+
+	&.disabled
+		opacity 0.3
+		pointer-events none
