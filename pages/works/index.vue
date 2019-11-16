@@ -44,14 +44,14 @@ export default {
 					image: require('~/assets/14-recurrence.jpg'),
 					year: '2017 June',
 					meta: 'Performance (with Namiji)',
-					to: '/works/armenia'
+					to: '/works/14-recurrence'
 				},
 				{
 					title_en: 'Present Continuous',
 					title_zh: '現在進行',
 					headline_en: 'Physical phenomenon with emotion',
 					headline_zh: '能被體驗的物理現象',
-					image: require('~/assets/present-continuous-01.jpg'),
+					image: require('~/assets/present-continusous-cover.jpg'),
 					year: '2016 Aug',
 					meta: 'Solo Exhibition',
 					to: '/works/present-continous'
@@ -64,17 +64,17 @@ export default {
 					image: require('~/assets/Assemblage.jpg'),
 					year: '2015',
 					meta: 'Assemblage',
-					to: '/works/armenia'
+					to: '/works/wch-assemblage'
 				},
 				{
-					title_en: 'WCH Assemblage Performance',
+					title_en: 'Floating Projects Spatial Pressure Calibration',
 					title_zh: '壓力測試',
 					headline_en: 'Physical phenomenon with emotion',
 					headline_zh: '能被體驗的物理現象',
-					image: require('~/assets/Assemblage.jpg'),
+					image: require('~/assets/fp-spatial-pressure-calibration.png'),
 					year: '2015',
 					meta: 'Performance',
-					to: '/works/armenia'
+					to: '/works/floating-projects-spatial-pressure-calibration'
 				},
 				{
 					title_en: 'Listen not Listen',
@@ -104,7 +104,7 @@ export default {
 					image: require('~/assets/the-telescope.jpg'),
 					year: '2012 Aug',
 					meta: 'Sound Installation',
-					to: '/works/armenia'
+					to: '/works/the-telescope'
 				}
 			]
 		}
