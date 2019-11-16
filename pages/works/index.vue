@@ -1,17 +1,17 @@
 <template lang="pug">
 	.site
 		nuxt-link.work-item(v-for="(w,i) in list" :to="w.to" :key="i")
+			.work-item__year {{w.year}}
 			.work-item__info {{w.meta}}
 			.work-item__main
+				img(:src="w.image").work-item__img
 				.work-item__title {{w.title_zh}}
 				.work-item__subtitle {{w.title_en}}
-				img(:src="w.image").work-item__img
 			.work-item__foot
 				.dl-ac
 					.work-item__headline {{w.headline_zh}} | {{w.headline_en}}
 					.spacer
 					dl-icon(name="right" scale="1.3" color="#808080")
-				.work-item__foot__year {{w.year}}
 
 </template>
 
@@ -82,7 +82,7 @@ export default {
 					headline_en: 'Physical phenomenon with emotion',
 					headline_zh: '能被體驗的物理現象',
 					image: require('~/assets/listen-not-listen.jpg'),
-					year: '20159月－20161月',
+					year: '2015年9月－2016年1月',
 					meta: 'Collaborative project on sound',
 					to: '/works/listen-not-listen'
 				},
@@ -116,9 +116,10 @@ export default {
 	@import '../../stylus/components/index.styl'
 	.work-item
 		max-width 680px
-		margin 100px auto
+		margin 80px auto
 		display block
 		text-align left
+		line-height 1.2
 		&:first-child
 			margin-top 0
 		&:last-child
@@ -127,14 +128,21 @@ export default {
 			text-transform uppercase
 			font-size 11px
 			font-weight bold
-			margin-bottom 16px
+			margin-bottom 8px
 			color #8e8e8e
 		&__main
 			background #F6F6F6
 			position relative
 			margin 0 24px 0 0
-			padding 56px 56px 72px 56px
+			padding 56px 272px 72px 56px
 			border-radius 8px
+			@media(max-width 600px)
+				margin 0
+				padding 16px
+		&__year
+			font-size 11px
+			font-weight bold
+			margin-bottom 2px
 		&__foot
 			background #fefefe
 			min-height 56px
@@ -148,6 +156,9 @@ export default {
 			font-size 12px
 			line-height 1.2
 			font-weight bold
+			@media(max-width 600px)
+				margin 0
+
 			&__year
 				position absolute
 				left 56px
@@ -162,8 +173,11 @@ export default {
 			position absolute
 			right 56px
 			top -32px
+			@media(max-width 600px)
+				position static
 		&__title
 			letter-spacing 2px
+			margin-bottom 6px
 			font-size 24px
 			font-weight bold
 		&__subtitle
