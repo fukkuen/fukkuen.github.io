@@ -120,6 +120,8 @@ export default {
 		display block
 		text-align left
 		line-height 1.2
+		@media(max-width 600px)
+				margin 40px 0
 		&:first-child
 			margin-top 0
 		&:last-child
@@ -158,6 +160,7 @@ export default {
 			font-weight bold
 			@media(max-width 600px)
 				margin 0
+				padding 16px
 
 			&__year
 				position absolute
@@ -174,6 +177,7 @@ export default {
 			right 56px
 			top -32px
 			@media(max-width 600px)
+				margin-bottom 16px
 				position static
 		&__title
 			letter-spacing 2px

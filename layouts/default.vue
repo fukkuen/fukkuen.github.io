@@ -53,6 +53,8 @@
 		max-width 800px
 		padding 20px 20px 40px 20px
 		margin 0 auto
+		@media(max-width 600px)
+			padding-top 0
 
 	.site-footer
 		background #dadada

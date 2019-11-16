@@ -17,7 +17,13 @@
 
 <script>
 	export default {
-		name: 'abc'
+		name: 'abc',
+
+		head () {
+			return {
+				title: 'Floating Projects Spatial Pressure Calibration'
+			}
+		}
 	}
 </script>
 

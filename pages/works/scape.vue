@@ -73,8 +73,7 @@
 
     head () {
       return {
-        title: '_scape',
-				content: 'My custom description'
+        title: '_scape'
       }
     }
   }

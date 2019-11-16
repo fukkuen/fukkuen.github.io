@@ -29,7 +29,7 @@
 
 		head () {
 			return {
-				title: 'armenia'
+				title: 'Armenia Walk'
 			}
 		}
 	}

@@ -1,13 +1,16 @@
 <template lang="pug">
 	article.page
 		header
-			img(src="~/assets/listen-not-listen.jpg")
+			img(src="~/assets/listen-not-listen-we.jpg")
 			h1 Listen not listen
 			h2 聽到聽不到
 		.section
 			h3 About
 			p Listen not Listen is a 5-month-long programme between 4 artists with different abilities linked up by sound/listening practise, organised collaboratively between soundpocket and HKADA. The 4 artists includes Samson Cheung and me from soundpocket, Frances Law and William Wong from HKADA. The programme started with a series of workshops and games decided by Samson Cheung and me, followed by a collaborative game where the 4 artists learn and inspired by each other and make their works. We had held sharing section and small-scale exhibition to share what we have learned during this valuable collaboration.
 			p 《聽到聽不到》是一個以聲音創作連繫四位不同能力的藝術家的合作項目，由聲音圖書館及香港展能藝術會策辦。四位藝術家包括來自聲音圖書館的我和張才生，以及來自香港展能藝術會的王志威和羅志琪。合作計劃環跨5個月，包括由最初我和張才生為二人設計的聲音工作坊，到後來4人共同創作傳波仔，到創作交流結小有成果舉行展覽，還有因而得到的聲音友誼。
+			h3 How our collaboration worked/ How we collaborate
+			p First, each of us threw a piece of work and then passed it to the next artists in a cycle. When the next one received it, he/she could freely develop it, or respond by making a new piece. There were 4 cycles in total, each of them consists of 4 pieces of work.
+			img(src="~/assets/listen-not-listen-loop.png")
 		.section
 			h2 4 works
 			.quote
@@ -35,7 +38,13 @@
 
 <script>
 	export default {
-		name: 'abc'
+		name: 'abc',
+
+		head () {
+			return {
+				title: 'Listen not listen'
+			}
+		}
 	}
 </script>
 

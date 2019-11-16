@@ -52,7 +52,13 @@
 
 <script>
 	export default {
-		name: 'abc'
+		name: 'abc',
+
+		head () {
+			return {
+				title: 'Present Continuous'
+			}
+		}
 	}
 </script>
 
