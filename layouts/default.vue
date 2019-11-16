@@ -8,7 +8,9 @@
 				nuxt-link(to="/blog") blog
 				nuxt-link(to="/sounds") sounds
 				nuxt-link(to="/bio") bio
-				nuxt-link(to="/bio") IG
+				// nuxt-link(to="/bio")
+				a(href="https://www.instagram.com/fukkuen33" target="_blank").ig-btn
+					dl-icon(name="ig")
 		main.site-main
 			nuxt
 		footer.site-footer © 2019 fukkuen.com
@@ -24,6 +26,9 @@
 			letter-spacing 1px
 
 		nav
+			display flex
+			align-items center
+			justify-content center
 			a
 				display inline-block
 				padding 8px 16px
@@ -36,10 +41,13 @@
 						margin-left -3px
 						content ''
 						display block
-						background black
+						background alpha(black, .6)
 						width 6px
 						height 6px
 						border-radius 8px
+			.ig-btn
+				fill #808080
+				display flex
 
 	.site-main
 		max-width 800px

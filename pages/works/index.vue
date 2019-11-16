@@ -9,7 +9,8 @@
 			.work-item__foot
 				.dl-ac
 					.work-item__headline {{w.headline_zh}} | {{w.headline_en}}
-					// span ->
+					.spacer
+					dl-icon(name="right" scale="1.3" color="#808080")
 				.work-item__foot__year {{w.year}}
 
 </template>
@@ -115,7 +116,7 @@ export default {
 	@import '../../stylus/components/index.styl'
 	.work-item
 		max-width 680px
-		margin 120px auto
+		margin 100px auto
 		display block
 		text-align left
 		&:first-child
@@ -137,7 +138,7 @@ export default {
 		&__foot
 			background #fefefe
 			min-height 56px
-			padding 24px 56px 24px 56px
+			padding 24px 16px 24px 56px
 			margin-left 112px
 			margin-top -32px
 			margin-bottom 36px
