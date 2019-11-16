@@ -1,39 +1,54 @@
 <template lang="pug">
-  div
-    header
-      h1
-        nuxt-link(to="/") fukkuen.com
-      nav
-        nuxt-link(to="/works") works
-        nuxt-link(to="/bio") bio
-    main
-      nuxt
+	div
+		header.site-header
+			h1
+				nuxt-link(to="/") fukkuen
+			nav
+				nuxt-link(to="/works") works
+				nuxt-link(to="/blog") blog
+				nuxt-link(to="/sounds") sounds
+				nuxt-link(to="/bio") bio
+				nuxt-link(to="/bio") IG
+		main.site-main
+			nuxt
+		footer.site-footer © 2019 fukkuen.com
 </template>
 
 <style lang="stylus">
-  header
-    padding 24px
-    text-align center
-    h1
-      letter-spacing 1px
-      margin 8px
-      font-size 12px
+	@import '../stylus/components'
+	.site-header
+		padding 24px
+		text-align center
+		h1
+			font-size 1rem
+			letter-spacing 1px
 
-  nav
-    margin 24px
-    a
-      padding 8px
-      &.nuxt-link-active
-        font-weight bold
+		nav
+			a
+				display inline-block
+				padding 8px 16px
+				position relative
+				&.nuxt-link-active
+					&:before
+						position absolute
+						bottom 0
+						left 50%
+						margin-left -3px
+						content ''
+						display block
+						background black
+						width 6px
+						height 6px
+						border-radius 8px
 
-  main
-    max-width 800px
-    margin 0 auto
+	.site-main
+		max-width 800px
+		padding 20px 20px 40px 20px
+		margin 0 auto
 
-  p
-    margin 16px 0
-    &:first-child
-      margin-top 0
-    &:last-child
-      margin-bottom 0
+	.site-footer
+		background #dadada
+		text-align center
+		font-size 11px
+		padding 24px
 </style>
